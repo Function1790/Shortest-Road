@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=[KEYVALUE]&libraries=services,clusterer,drawing"></script>
+    <script src="script.js"></script>
+    <title>SOR</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <!--Navigator-->
+        <div class="header">
+            <div class="nav-header">
+                <div class="openMenu">
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                    <div class="menuLine"></div>
+                </div>
+            </div>
+            <div class="nav-container">
+                <a href="/">
+                    <div class="logoWrap">
+                        <img src="./img/logo.png" alt="LOGO">
+                    </div>
+                </a>
+            </div>
+            <div class="nav-footer">
+
+            </div>
+        </div>
+        <!--Content-->
+        <div class="container">
+            <div class="mapViewer-wrap">
+                <div id="mapViewer" style="width:800px; height:500px;"></div>
+            </div>
+        </div> 
+    </div>
+    <!--KakaoMap-->
+    <script>
+		var container = document.getElementById('mapViewer');
+		var options = {
+			center: new kakao.maps.LatLng(33.450701, 126.570667),
+			level: 3
+		};
+
+		var map = new kakao.maps.Map(container, options);
+	</script>
+</body>
+
+</html>
