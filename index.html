@@ -5,8 +5,6 @@
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <title>SOR</title>
 </head>
 
@@ -35,14 +33,13 @@
         <!--Content-->
         <div class="container">
             <div class="mapViewer-wrap">
-                <div id="mapViewer" style="width:800px; height:500px;"></div>
+                <div id="mapViewer" style="width:800px; height:800px;">
+                    <canvas id="canvas" width="1600" height="1600"></canvas>
+                </div>
             </div>
-        </div> 
+        </div>
     </div>
-    <!--KakaoMap-->
-    <script>
-
-	</script>
+    <script src="script.js"></script>
 </body>
 
 </html>
